@@ -6,8 +6,9 @@ def my_all?(collection)
   collection.each do |i|
     while i < collection.length
     nuarray  <<(collection[i])
-    i +=1 #i += 1 does the same thing. Use this if it's easier for you.
+    i +=1
+    nuarray #i += 1 does the same thing. Use this if it's easier for you.
     end
-    nuarray
+  
 end
 end
