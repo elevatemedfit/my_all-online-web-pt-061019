@@ -1,13 +1,16 @@
 require 'pry'
 
 def my_all?(collection)
-  nuarray =[]
   i = 0
+  block_return_values = []
   collection.each do |i|
     while i < collection.length
-    yield(collection[i])
+    block_return_values << yield(collection[i])
     i = i + 1 #i += 1 does the same thing. Use this if it's easier for you.
     end
-
+if block_return_values.include?(false)
+  false
+else
+  true
 end
 end
